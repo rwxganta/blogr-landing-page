@@ -118,9 +118,12 @@ body {
     color: var(--neutral-Very-dark-grayish-blue);
 }
 
+a {
+    text-decoration: none;
+    color: var(--neutral-White);
+}
+
 .wrapper {
-    outline: 2px dotted steelblue;
-    /*outline-offset: -1px;*/
     margin-inline: auto;
     max-width: 1120px;
 }
@@ -129,6 +132,7 @@ body {
 
 .hero {
     padding-block: 4.4rem 9.5rem;
+    color: var(--neutral-White);
     background: url(./images/bg-pattern-intro-desktop.svg),
                 linear-gradient(to right, var(--Very-light-red), var(--Light-red));
     background-position: 30% center;
@@ -137,4 +141,62 @@ body {
     /* TODO: How this fuckin' blend shit works */
     background-blend-mode: soft-light;
     border-bottom-left-radius: 70px;
+}
+
+.hero *:not(.hero__logo-nav) {
+    text-align: center;
+}
+
+
+.hero__logo-nav {
+    margin-block-end: 9rem;
+    display: flex;
+    align-items: center;
+    gap: 3.75rem;
+}
+
+.menu {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.login-signup,
+.cta {
+    width: max-content;
+    display: flex;
+    gap: 1rem;
+}
+
+.login-signup {
+    margin-left: auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin-block-end: 3rem;
+}
+
+.cta {
+    margin-inline: auto;
+}
+
+.btn {
+    padding: .6rem 1.8rem;
+    font-weight: 600;
+    border-radius: 100vw;
+}
+
+.bg-white {
+    background-color: var(--neutral-White);
+    color: var(--Light-red);
+}
+
+.bg-transparent {
+    outline: 1px solid var(--neutral-White);
+    color: var(--neutral-White);
 }
