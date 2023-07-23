@@ -123,6 +123,10 @@ a {
     color: var(--neutral-White);
 }
 
+p:not(.hero p) {
+    max-width: 48ch;
+}
+
 .wrapper {
     margin-inline: auto;
     max-width: 1120px;
