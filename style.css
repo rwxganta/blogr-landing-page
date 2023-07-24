@@ -307,3 +307,42 @@ p:not(.hero p) {
     /*margin-block: 1.3rem 4rem;*/
     margin-block-end: 4rem;
 }
+
+/* Footer */
+
+footer {
+    margin-block-start: 7rem;
+    padding-block: 4.3rem;
+    background-color: var(--neutral-Very-dark-black-blue);
+
+    border-top-right-radius: 80px;
+}
+
+footer h3 {
+    margin-block-end: 1.6rem;
+    color: var(--neutral-White);
+}
+
+footer .wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 9rem;
+}
+
+.nav-secondary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+footer a {
+    color: var(--neutral-Grayish-blue);
+    font-weight: 500;
+}
