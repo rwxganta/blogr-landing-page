@@ -231,7 +231,7 @@ p:not(.hero p) {
 }
 
 .state-of-art {
-    margin-block-end: 10rem;
+    margin-block-end: 6rem;
     padding-block: 7.5rem;
     padding-left: 50%;
     color: var(--neutral-White);
@@ -282,4 +282,28 @@ p:not(.hero p) {
     position: absolute;
     top: -4.3rem;
     left: 5rem;
+}
+
+.open-simple {
+    padding-block: 14rem;
+    background-image: url(./images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -71% center;
+}
+
+.open-simple .wrapper {
+    display: flex;
+}
+
+.text-group {
+    margin-left: auto;
+}
+
+.open-simple h3 {
+    margin-block-end: 1.3rem;
+}
+
+.open-simple p:not(:last-of-type) {
+    /*margin-block: 1.3rem 4rem;*/
+    margin-block-end: 4rem;
 }
