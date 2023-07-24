@@ -118,6 +118,10 @@ body {
     color: var(--neutral-Very-dark-grayish-blue);
 }
 
+h2, h3 {
+    color: var(--primary-Very-dark-blue);
+}
+
 a {
     text-decoration: none;
     color: var(--neutral-White);
@@ -203,4 +207,25 @@ p:not(.hero p) {
 .bg-transparent {
     outline: 1px solid var(--neutral-White);
     color: var(--neutral-White);
+}
+
+.designed-future {
+    /*outline: 2px solid tomato;*/
+    padding-block: 8rem;
+
+    /* TODO: Deal with this image. Background Vs. <img> */
+    background-image: url(./images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto 750px;
+    background-position: 140% center;
+}
+
+.designed-future h2 {
+    margin-block-end: 3.3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.designed-future p {
+    margin-block: 1.3rem 4rem;
 }
