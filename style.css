@@ -229,3 +229,57 @@ p:not(.hero p) {
 .designed-future p {
     margin-block: 1.3rem 4rem;
 }
+
+.state-of-art {
+    margin-block-end: 10rem;
+    padding-block: 7.5rem;
+    padding-left: 50%;
+    color: var(--neutral-White);
+
+    background:
+        url(./images/bg-pattern-circles.svg),
+        linear-gradient(to right, var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
+    background-repeat: no-repeat;
+    /*background-position: -61% 80%;*/
+    background-position: -45% 80%;
+    background-size: 930px ,auto;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.state-of-art h2 {
+    padding-block-end: 1.5rem;
+    color: var(--neutral-White);
+}
+
+/*.state-of-art::before {
+    content: '';
+    aspect-ratio: 1;
+    height: 900px;
+    position: absolute;
+    left: -190px;
+    top: -450px;
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-size: cover;
+}*/
+
+/*.state-of-art::after {
+    content: '';
+    position: absolute;
+    aspect-ratio: 1;
+    height: 579px;
+    left: 5rem;
+    top: -76px;
+    z-index: 3;
+
+    background-image: url(./images/illustration-phones.svg);
+    background-size: cover;
+}*/
+
+.state-of-art img {
+    position: absolute;
+    top: -4.3rem;
+    left: 5rem;
+}
