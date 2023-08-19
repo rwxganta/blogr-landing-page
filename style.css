@@ -110,6 +110,11 @@ select {
 
     --ff-primary: 'Overpass', sans-serif;
     --ff-secondary: 'Ubuntu', sans-serif;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
 }
 
 body {
@@ -159,26 +164,62 @@ p:not(.hero p) {
 .hero__logo-nav {
     margin-block-end: 9rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 3.75rem;
+    position: relative;
 }
 
+/* NAV */
 .menu {
-    padding: 0;
+    padding: 2rem 1.3rem;
     list-style: none;
+    background-color: var(--neutral-White);
+    border-radius: 5px;
+
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: calc(100% - 2.5rem);
+    top: 4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu a {
+    color: var(--primary-Very-dark-blue);
+}
+
+.menu-dropdown {
+    /*outline: 1px solid tomato;*/
+    margin: 0;
+    padding: 0;
+    padding-block-end: 1rem;
+    margin-block-end: 1rem;
+    border-bottom: 1px solid var(--neutral-Grayish-blue);
+    font-weight: var(--fw-semibold);
+
+    display: grid;
     gap: 1rem;
+}
+
+.menu-dropdown > *::after {
+    /*outline: 1px solid red;*/
+    content: url('./images/icon-arrow-light.svg');
+    display: inline-block;
+    margin-inline-start: .5rem;
+    /*transform: rotate(180deg);*/
 }
 
 .login-signup,
 .cta {
-    width: max-content;
+    /*outline: 1px solid saddlebrown;*/
+    /*width: max-content;*/
     display: flex;
-    gap: 1rem;
-}
-
-.login-signup {
-    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
 }
 
 .hero h1 {
@@ -194,9 +235,14 @@ p:not(.hero p) {
 }
 
 .btn {
+    width: max-content;
     padding: .6rem 1.8rem;
     font-weight: 600;
     border-radius: 100vw;
+}
+
+.signup-btn {
+    background-image: linear-gradient(to right, var(--Very-light-red), var(--Light-red));
 }
 
 .bg-white {
@@ -209,6 +255,8 @@ p:not(.hero p) {
     color: var(--neutral-White);
 }
 
+
+/* section */
 .designed-future {
     /*outline: 2px solid tomato;*/
     padding-block: 8rem;
