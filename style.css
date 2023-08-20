@@ -171,12 +171,22 @@ p:not(.hero p) {
 }
 
 /* NAV */
+.hamburguer {
+    /*outline: 1px solid saddlebrown;*/
+    width: 1.6rem;
+    aspect-ratio: 1;
+    border: 0;
+    background: url(/images/icon-hamburger.svg);
+    background-size: cover;
+    cursor: pointer;
+}
+
 .menu {
     padding: 2rem 1.3rem;
     list-style: none;
     background-color: var(--neutral-White);
     border-radius: 5px;
-    
+
     display: flex;
     flex-direction: column;
     position: absolute;
