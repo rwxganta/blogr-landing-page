@@ -225,6 +225,35 @@ p:not(.hero p) {
     /*transform: rotate(180deg);*/
 }
 
+.dropdown-action {
+    position: relative;
+}
+
+.dropdown {
+    /*outline: 1px dotted seagreen;*/
+    margin-top: 1.5rem;
+    padding: 1.8rem 0;
+    background-color: var(--neutral-Grayish-blue);
+    border-radius: 5px;
+    display: grid;
+    gap: .7rem;
+    /*transform: rotateX(90deg);
+    display: none;*/
+
+    /*position: absolute;*/
+    /*width: calc(100% - 2.5rem);*/
+    width: 100%;
+    left: 50%;
+    /*transform: translateX(-50%);*/
+}
+
+/*.dropdown-action:hover + .dropdown {
+    outline: 3px solid saddlebrown;
+    transform: translateX(-50%) rotateX(0deg);
+    transform: rotateX(0deg);
+    display: block;
+}*/
+
 .login-signup,
 .cta {
     /*outline: 1px solid saddlebrown;*/
