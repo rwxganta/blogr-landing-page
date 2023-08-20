@@ -176,7 +176,7 @@ p:not(.hero p) {
     list-style: none;
     background-color: var(--neutral-White);
     border-radius: 5px;
-
+    
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -188,6 +188,10 @@ p:not(.hero p) {
 
 .menu a {
     color: var(--primary-Very-dark-blue);
+}
+
+.menu .signup-btn {
+    color: var(--neutral-White);
 }
 
 .menu-dropdown {
