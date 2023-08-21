@@ -1,7 +1,7 @@
 const hamburguerBtn = document.querySelector('.hamburguer');
 const menu = document.querySelector('.menu');
 
-addEventListener('click', () => {
+hamburguerBtn.addEventListener('click', () => {
     menu.setAttribute('data-open', 
     menu.getAttribute('data-open') === 'true' ? 'false' : 'true');
     hamburguerBtn.classList.toggle('open');
