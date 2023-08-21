@@ -181,6 +181,10 @@ p:not(.hero p) {
     cursor: pointer;
 }
 
+.hamburguer.open {
+    background: url(/images/icon-close.svg);
+}
+
 .menu {
     padding: 2rem 1.3rem;
     list-style: none;
@@ -193,7 +197,17 @@ p:not(.hero p) {
     width: calc(100% - 2.5rem);
     top: 4.5rem;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotateX(-90deg);
+    transform-origin: top center;
+    opacity: .3;
+    transition: all 250ms;
+    visibility: hidden;
+}
+
+.menu[data-open='true'] {
+    transform: translateX(-50%) rotateX(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu a {
