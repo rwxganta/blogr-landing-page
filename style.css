@@ -137,6 +137,8 @@ p:not(.hero p) {
 }
 
 .wrapper {
+    outline: 1px dotted saddlebrown;
+    padding-inline: 1.5rem;
     margin-inline: auto;
     max-width: 1120px;
 }
@@ -144,7 +146,7 @@ p:not(.hero p) {
 /* General styling */
 
 .hero {
-    padding-block: 4.4rem 9.5rem;
+    padding-block: 3.5rem 9.5rem;
     color: var(--neutral-White);
     background: url(./images/bg-pattern-intro-desktop.svg),
                 linear-gradient(to right, var(--Very-light-red), var(--Light-red));
@@ -153,7 +155,7 @@ p:not(.hero p) {
     background-repeat: no-repeat;
     /* TODO: How this fuckin' blend shit works */
     background-blend-mode: soft-light;
-    border-bottom-left-radius: 70px;
+    border-bottom-left-radius: 89px;
 }
 
 .hero *:not(.hero__logo-nav) {
@@ -194,7 +196,7 @@ p:not(.hero p) {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: calc(100% - 2.5rem);
+    width: 100%;
     top: 4.5rem;
     left: 50%;
     transform: translateX(-50%) rotateX(-90deg);
