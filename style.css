@@ -123,6 +123,10 @@ body {
     color: var(--neutral-Very-dark-grayish-blue);
 }
 
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
 h2, h3 {
     color: var(--primary-Very-dark-blue);
 }
@@ -137,7 +141,6 @@ p:not(.hero p) {
 }
 
 .wrapper {
-    outline: 1px dotted saddlebrown;
     padding-inline: 1.5rem;
     margin-inline: auto;
     max-width: 1120px;
@@ -282,7 +285,7 @@ p:not(.hero p) {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .hero p {
